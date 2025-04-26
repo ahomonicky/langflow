@@ -4,12 +4,13 @@
     {
       "src": "src/frontend/package.json",
       "use": "@vercel/static-build",
-      "config": { "distDir": "build" }
+      "config": { "distDir": "public" }
     }
   ],
   "rewrites": [
-    { "source": "/api/(.*)", "destination": "api/$1" },
-    { "source": "/(.*)",      "destination": "index.html" }
+    { "source": "/api/(.*)", "destination": "/api/$1" },
+    { "source": "/(.*)", "destination": "/index.html" }
   ]
 }
+
 
