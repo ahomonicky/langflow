@@ -1,0 +1,5 @@
+{
+  "scripts": {
+    "vercel-build": "cd src/frontend && npm install && npm run build && cp -a build/* ."
+  }
+}
