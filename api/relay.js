@@ -5,7 +5,7 @@ export default async function handler(req, res) {
 
   // Mapa flowId → skutečné webhook URL z ENV
   const hooks = {
-    chat1: http://23.88.120.170:7860/api/v1/run/0e668343-e19f-4f6c-8853-2bc8efa69f3f,
+    chat1: process.env.WEBHOOK_CHAT1,
     chat2: process.env.WEBHOOK_CHAT2,
     // přidej sem další podle potřeby
   };
