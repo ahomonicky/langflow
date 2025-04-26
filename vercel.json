@@ -8,6 +8,8 @@
     }
   ],
   "routes": [
+    // ! Proveďte rewrite pouze pro všechny cesty kromě /api
+    { "src": "/api/(.*)", "dest": "/api/$1" },
     { "src": "/(.*)", "dest": "/index.html" }
   ]
 }
